@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <!--Tipos de links: quando for um link EXTERNO é recomendável q se use o targe ="_blank"(irá abrir uma nova pagina com o seu link)
+                        quando for um link INTERNO é recomendavel q se use o target ="_self"(irá abrir na mesma pagina de navegação)-->
+    <h1>Usando links.</h1>
+    <!-- Link externo, utiliza-se  rel ="external"-->
+    <h2>Links Exernos</h2>
+    <p>Voce pode acessar o meu<a href= "https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório público no Github'</a></p>
+    <p>Você pode acessar o <a href= "https://www.youtube.com/" target="_blank" >youtube</a></p>
+    
+    <!-- Link interno, utiliza-se rel ="next"(quando é para avançar a pagina),   rel ="prev"(para retornar a pagina)-->
+    <h2>Links Internos</h2>
+    
+    <p>Acessando a página <a href="pag002.html" target="_self">002</a> do proprio site.</p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">terceira</a>página.</p>
+    <!-- Para acessar a lista de type acesse o site: https://www.iana.org/assignments/media-types/media-types.xhtml-->
+    <!-- Para baixar rar (type ="aplication/rar")-->
+    <!-- Para baixar pdf (type ="aplication/pdf")-->
+    <h2>Link para Dowloads</h2>
+    <ul>
+        <li>Baixar o livro em <a href="livro/Curso_Intensivo_de_Python_Uma_-_Eric_Mat.pdf" type="aplication/pdf">PDF</a></li>
+        <li>Livro compactado em <a href="livro/Curso_Intensivo_de_Python_Uma_-_Eric_Mat.rar" type="aplication/rar">.rar</a></li>
+    </ul>
+</body>
+</html>

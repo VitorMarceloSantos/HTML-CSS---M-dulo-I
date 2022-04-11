@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagem Responsiva</h1>
+    <!--Vai ser utilizado diferentes tipos de tamanho de imagem, a depender do tamanho da tela do usuario.-->
+    <picture>
+        <!-- IMPORTANTE - o source sempre deverá ser do menor para o maior, nessa ordem-->
+        <source media="(max-width: 750px)" srcset="Foto-Maragogi-300.jpg" type="image/jpg"> <!--A imagem será alterada automaticamente quando a janela(tela) do usuario for menor que 750 px-->
+        <source media="(max-width: 1050px)" srcset="Foto-Maragogi-700.jpg" type="image/jpg"> <!-- A imagem será alterada automaticamente quando a janela(tela) do usuario for menor que 1050 px-->
+        <img src="Foto-Maragogi-1000.jpg" alt="Imagem Flexivel funciona."> <!--Como padrão irá ficar a imagem de tamanho 1000 pixel.-->
+    </picture>
+    <h1>Adicionanda musica</h1>
+    <!-- Para adicionar arquivos de audio ao site-->
+    <!--<audio preload="metadata" controls autoplay loop>-->
+    <audio src="musica.mp3"  controls autoplay></audio>
+    <p>Seu navegador não suporta audio <a href="musica.mp3" download="musica.mp3" type="audio/mpeg"></a></p>
+    <h1>Adicionando Video</h1>
+    <!--Adicionando video no site, hospedado localmente(no proprio servidor)(Obs. deve adicionar os arquivos mp4, ogg, e mkv para ter suporte a todos os navegadores, utilizando a tag source)-->
+    <video src="meuvideo.mp4" width="500" controls></video>
+    <!-- Adicionando video de maneira externa(youtube, vimeo, ...)(Obs. clicar em incorporar para gerar o link html do video)-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_fNOPwGI7k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"><!--codigo incorporado do youtube-->
+
+
+</body>
+</html>
