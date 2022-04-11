@@ -1,4 +1,4 @@
 # HTML-CSS-Modulo-I
-Curso Gustavo Guanabara - HTML/CSS - Módulo I
+Módulo I - Curso Gustavo Guanabara 
 
 Este repositório contém: Exercicios e Desafios
